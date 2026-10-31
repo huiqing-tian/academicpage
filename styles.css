@@ -146,7 +146,7 @@ header nav a[href="teaching.html"]:hover,header nav a[href="cv.html"]:hover{colo
 .feedback p{font-size:18px;line-height:1.75}
 .project-tags{gap:10px;margin-top:20px}
 .project-tags li{font-size:15px;font-weight:500;padding:6px 12px;background:rgba(76,153,112,.22);border-radius:5px}
-.cv-page .wrap{max-width:1320px}
+.cv-page main.wrap{max-width:1320px}
 .cv-page .cv-download{max-width:1200px}
 .cv-preview{height:1100px;min-height:85vh}
 @media(max-width:620px){.cv-preview{height:85vh;min-height:600px}.project-tags li{font-size:14px}.feedback p{font-size:18px}}
@@ -169,3 +169,13 @@ header nav a[href="teaching.html"]:hover,header nav a[href="cv.html"]:hover{colo
 }
 
 .sessions-taught.single-session ul{columns:1}
+
+/* Stable page and navigation geometry across all sections */
+html{overflow-y:scroll}
+@supports (scrollbar-gutter:stable){html{overflow-y:auto;scrollbar-gutter:stable}}
+header nav a{flex:0 0 auto}
+header nav a:nth-child(1){width:3.2em}
+header nav a:nth-child(2){width:4.5em}
+header nav a:nth-child(3){width:4.5em}
+header nav a:nth-child(4){width:6.6em}
+header nav a:nth-child(5){width:1.7em}
